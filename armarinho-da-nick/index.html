@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armarinho da Nick</title>
+    <!-- Link Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <!--JS-->
+    <script src="js/script.js" defer></script>
+    <script src="js/produtos.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="img/logo.png">
+        <a href="index.html"><h1>Armarinho da  Nick</h1></a>
+    </div>
+    <div class="user-navigation">
+        <nav>
+          <ul>
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#sobre">Empresa</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><button id="logar"><a href="login.html" target="_parent">Login</a></button></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <div class="box-text">
+        <h2>Bem Vindo ao Armarinho da Nick!</h2>
+        <p>
+          Aqui, criatividade e paixão pelo artesanato se encontram. Nossa loja é o ponto de encontro para quem ama criar, seja com agulhas, fios ou pincéis.
+        </p>
+        <a href="cadastro.html" target="_parent">Crie uma conta aqui<i class="fa-solid fa-up-right-from-square"></i></a>
+        <p>
+          Além de poder comprar materiais para confeccionar suas peças você também pode vendê-las no nosso site, basta estar cadastrado no sistema.
+        </p>
+        <a href="produtos.html" target="_blank">Cadastre um produto aqui<i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+      <div id="box-img">
+        <img src="https://img.freepik.com/vetores-premium/conjunto-para-bola-artesanal-para-croche-e-trico_61136-696.jpg" alt="ilustração de itens de armarinho">
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="box-img">
+        <img src="https://i.pinimg.com/originals/ee/1a/d6/ee1ad6da1bc8816f5ef623926f98ce37.png" alt="ilustração de um cesto com itens de armarinho dentro">
+      </div>
+      <div class="box-text">
+        <h2>Nossa Empresa</h2>
+        <p>
+          “No Armarinho da Nick, acreditamos que cada ideia merece ganhar vida. Nosso objetivo é trazer o melhor em materiais de tecelagem e peças prontas para artistas e artesãos apaixonados. Inspirados pelo desejo de conectar criadores com seus sonhos, oferecemos um espaço onde qualidade, criatividade e carinho estão presentes em cada fio, em cada detalhe. Transforme suas ideias em arte conosco!”
+        </p>
+        <p>
+          Além de vendermos materiais para artesãos produzirem seus trabalhos, o Armarinho da Nick também tem como objetivo divulgar o trabalho dos nossos artesãos, tanto nas redes sociais como na loja de vendas... por isso passe nos nossos bastidores para conhecer um pouco mais de nossas estrelas que trabalham com tanto amor!
+        </p>
+        <a href="bastidores.html">clique aqui para ver nossos bastidores<i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+    </section>
+    <section id="produtos">
+      <h2>Produtos destaque</h2>
+      <div class="card-wrap">
+        <button class="cartoes" id="voltar"><i class="fa-solid fa-arrow-left" style="color: #635c2a;"></i></button>
+        <div id="cards">
+          <!--Aqui vão ser inseridos produtos dinamicamente-->
+            <!-- <div class="card-produt">
+                <div class="img-produt">
+                  <img src="produto.png" alt="Cafereita Premium">
+                </div>
+                <h3>Nome produto</h3>
+                <span id="preco">R$0,00</span>
+                <button id="comprar">Comprar</button>
+            </div> -->
+          </div>
+          <button class="cartoes" id="passar"><i class="fa-solid fa-arrow-right" style="color: #635c2a;"></i></button>
+      </div>
+        <div class="box-img centro">
+          <img src="img/f47a0ea93b24636cbc658ba024b1e1a5.jpg" alt="ilustração de novelos coloridos com ramos de folhas e flores">
+        </div>
+    </section>
+  </main>
+  <footer>
+      <div class="footer-container">
+        <!-- Redes Sociais -->
+        <div class="footer-section social-media">
+          <h4>Siga-nos</h4>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+          </ul>
+        </div>
+    
+        <!-- Informações de contato -->
+        <div class="footer-section contact-info">
+          <h4>Contato</h4>
+          <p>Email: <a href="mailto:@armarinhodanick.com">armarinhodanick@gmail.com</a></p>
+          <p>Telefone: <a href="tel:+550000000000">+XX (XX) XXXX-XXXX</a></p>
+          <p>Endereço: Rua Artesanal, 123 - São Paulo, SP</p>
+        </div>
+    
+        <!-- Navegação -->
+        <div class="footer-section navigation">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Empresa</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Armarinho da Nick. Todos os direitos reservados.</p>
+      </div>
+  </footer>      
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armarinho da Nick</title>
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="js/profile.js" defer></script>
+  <script src="js/produtos.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+          <img src="img/logo.png">
+          <a href="index.html"><h1>Armarinho da  Nick</h1></a>
+      </div>
+      <div class="user-navigation">
+          <nav>
+            <ul>
+              <li>
+                <button class="btn-sidebar">
+                  <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <button class="close-sidebar">X</button>
+      <div class="perfil-img">
+        <!--Foto inserida dinamicamente aqui-->
+      </div>
+      <span id="userName"></span>
+      <span id="userDesc"></span>
+      <nav>
+        <ul>
+          <li><button id="btn-edit-profile">Editar Perfil</button></li>
+          <li><button id="btn-cart">Carrinho de compras</button></li>
+          <li><button id="btn-newProdut">Produtos</button></li>
+          <li><button id="logout"><a href="login.html" target="_parent">Sair</a></button></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section id="propaganda">
+        <!--imagem do css-->
+        <a href="cupom.html">Confira nosso Cupom desconto!</a>
+      </section>
+      <section id="produtos">
+        <h2>Produtos da loja</h2>
+          <div class="card-wrap">
+          <div id="cards">
+            <!--Aqui vão ser inseridos produtos dinamicamente-->
+              <!-- <div class="card-produt">
+                  <div class="img-produt">
+                    <img src="produto.png" alt="Cafereita Premium">
+                  </div>
+                  <h3>Nome produto</h3>
+                  <span id="preco">R$0,00</span>
+                  <button id="comprar">Comprar</button>
+              </div> -->
+          </div>
+        </div>
+      </section>
+      <section id="editarDados">
+        
+      </section>
+      <section id="carrinhoDeCompras">
+        <h2>Carrinho de Compras</h2>
+          <ul id="lista-carrinho">
+            <!-- 
+            <li>
+              <h3>Kit de agulhas em crochê</h3>
+              <p>Preço: R$<span id="preco"></span></p>
+              <p>quantidade<span id="qtd"></span></p>
+            </li> 
+            -->
+          </ul>
+          <div id="totalCarrinho">
+            <!-- Aqui você pode calcular e mostrar o total do carrinho -->
+            <p>Total: R$<span id="valorTotal">0,00</span></p>
+            <button>Finalizar a compra</button>
+          </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

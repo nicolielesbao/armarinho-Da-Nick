@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/cadastro.js" defer></script>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <div class="logo-container">
+                <img src="img/logo.png" class="logo">
+            </div>
+            <h2>Cadastro</h2>
+            <div id="form">
+                <div class="input-container">
+                    <label for="name">Nome de usuário</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-container">
+                    <label for="descrição">Uma breve descrição sobre você</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="Descrição" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input-container">
+                    <label for="confirm-password">Confirme a Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                </div>
+                <div class="img-profile">
+                    <input type="file" name="img-profile" id="img-profile">
+                </div>
+                <button type="submit" class="register-btn">Cadastrar</button>
+            </div>
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+            <div id="msg">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

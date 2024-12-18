@@ -1,0 +1,262 @@
+/*Google fonts - open sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Paleta de cores do código*/
+:root {
+    --cor01: rgb(228, 187, 255);
+    --cor02: rgb(167, 111, 204);
+    --cor03: rgb(99, 92, 42);
+    --cor04: rgba(99, 92, 42, 0.6);
+}
+
+/*Barra de rolagem da página*/
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor04);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor03);
+    border-radius: 10px;
+    border: 3px solid var(--cor03);
+}
+
+/*elemento alvo do link para compensar o header*/
+:target {
+    scroll-margin-top: 110px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+/*Tudo do cabeçalho*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor01);
+    width: 100%;
+    height: 110px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--cor03);
+    padding: 5px;
+}
+
+/*Logo da marca canto superior esquerdo*/
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: var(--cor03);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo > img {
+    max-width: 90px;
+    border: solid 2px var(--cor03);
+    border-radius: 50%;
+}
+
+/*menuzinho de navegação canto superior direito*/
+.user-navigation, .user-navigation > nav {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+.user-navigation > nav > ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.user-navigation > nav > ul > li{
+    font-size: 1.5rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+.user-navigation > nav > ul > li > a {
+    text-decoration: none;
+    color: var(--cor03);
+}
+
+.user-navigation > nav > ul > li > a.active{
+    color: var(--cor02);
+    border-bottom: solid 3px var(--cor02);
+    transition: boder-bottom 3s ease;
+}
+
+/*Botão de fazer login*/
+button#logar{
+    padding: .5rem;
+    background-color: var(--cor03);
+    border-radius: .5rem;
+    border: none;
+}
+
+button#logar > a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-size: 1rem;
+}
+
+button#logar > a:hover, button#logar:hover{
+    cursor: pointer;
+    background-color: var(--cor02);
+    color: var(--cor03);
+}
+
+/*Conteúdo principal, todas as seções da lading page*/
+main {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section#home, section#sobre {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#produtos {
+    width: 100%;
+    height: 85vh;
+}
+
+/*textos e imagens das seções 1 e 2*/
+.box-text{
+    padding: 2rem;
+    width: 50%;
+    border-radius: 1.5rem;
+}
+
+.box-text > h2{
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+.box-text > p{
+    font-size: larger;
+    text-indent: 1.5rem;
+    padding: .5rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.box-text > a{
+    background-color: var(--cor01);
+    padding: .5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--cor03);
+}
+
+.box-text > a:hover{
+    cursor: pointer;
+    color: var(--cor02);
+}
+
+.box-img{
+    width: 50%;
+    animation: texto 5s ease-in;
+}
+
+/*section 2*/
+section#produtos > h2{
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+section#produtos .centro{
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--cor01);
+    color: var(--cor03);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--cor02);
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--cor03);
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--cor02);
+}
+
+.footer-section p a {
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #febbea;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-section.social-media ul li a i {
+    margin-right: 8px;
+}

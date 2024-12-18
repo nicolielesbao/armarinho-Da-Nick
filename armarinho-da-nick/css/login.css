@@ -1,0 +1,227 @@
+:root {
+    --cor01: rgb(228, 187, 255);
+    --cor02: rgb(159, 105, 196);
+    --cor03: rgb(99, 92, 42);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Adiciona contexto para o posicionamento do logo */
+}
+
+/* Logo - Posicionamento no canto superior esquerdo */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Garante que o logo fique sobre outros elementos */
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilo da caixa de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilo da caixa de login */
+.login-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--cor03);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: var(--cor03);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--cor03);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+    border-color: var(--cor02);
+}
+
+/* Estilo do botão de login */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor02);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: var(--cor01);
+}
+
+/* Estilo do checkbox e lembrete de login */
+.remember-me {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.signup-link p {
+    font-size: 14px;
+    color: var(--cor03);
+}
+
+.signup-link a {
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+#msg {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#msg.error {
+    background-color: var(--cor03);
+}
+
+#msg.success {
+    background-color: var(--cor02);
+}
+
+
+/* Responsividade - Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-container input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .remember-me,
+    .forgot-password,
+    .signup-link p {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade - Ajustes para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .login-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .input-container input {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .remember-me {
+        font-size: 12px;
+    }
+
+    .forgot-password a,
+    .signup-link p {
+        font-size: 12px;
+    }
+}
