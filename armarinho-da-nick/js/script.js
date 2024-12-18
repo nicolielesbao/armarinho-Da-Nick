@@ -1,9 +1,11 @@
 //links do header para o risquinho trocar dinâmicamente
 document.addEventListener('scroll', function() {
     let secoes = document.querySelectorAll('section'); 
+    // console.log(secoes);
     let links = document.querySelectorAll('.user-navigation a'); 
-  
-    // Loop para verificar cada seção e verificar se está visível na tela
+    // console.log(links);
+
+    // verifica qual section está na tela
     secoes.forEach((section, index) => {
       let rect = section.getBoundingClientRect();
       let link = links[index];
